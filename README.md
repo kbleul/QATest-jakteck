@@ -22,16 +22,13 @@ all items(avatar, name, and bio) are viewed Test what happens when user
 does not exists and user not found is returned Test that all states are
 resorted to original value when reset button is clicked
 
-7 Perform an automated end to end testing  - Test the complete user
+7 Perform an automated end to end testing - Test the complete user
 journey, user inputs username then get result
 
 Notes : #You should use Jest / react testing library or any other
 library you want for step number 6 #You should perform end to end
 testing using playwright library #And finally provide a small test
 report for the tests
-
- - - - Send me your github username so i can send you an invite to the
-github repo - - -
 
 After completing your tasks, push it to your own github repo and add
 this username(johhann (https://github.com/johhann)) as your
