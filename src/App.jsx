@@ -43,10 +43,8 @@ function App() {
   return (
     <VStack
       p={4}
-      mx="auto"
-      maxW={"xl"}
-      minH={"xl"}
-      align={"center"}
+      mx=" "
+      // maxW={"xl"}
       justify={"space-around"}
       sx={{
         width: "100%",
@@ -84,7 +82,13 @@ function App() {
             />
           </FormControl>
           <Flex width={"100%"} justify={"space-around"} mt={12}>
-            <Button type="submit" mt={4} colorScheme="teal">
+            <Button
+              border={"1px solid teal"}
+              type="submit"
+              mt={4}
+              colorScheme="teal"
+              disabled={!username}
+            >
               Submit
             </Button>
             <Button type="button" mt={4} onClick={handleReset}>
