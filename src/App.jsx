@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   Heading,
@@ -15,30 +15,44 @@ import {
 
 function App() {
   const [username, setUsername] = useState("");
-  const [user, setUser] = useState(null);
-  const [error, setError] = useState(false);
+  const [user, setUser] = useState(null)
+  const [errorMsg, setErrorMsg] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsLoading(true)
+
     try {
       const response = await fetch(`https://api.github.com/users/${username}`);
       if (response.status === 404) {
-        setError(true);
+        setErrorMsg("User not found. Try another user please.")
         setUser(null);
+        setIsLoading(false)
+
         return;
       }
+
       const data = await response.json();
+
       setUser(data);
-      setError(false);
+      setErrorMsg(null);
+      setIsLoading(false)
+
     } catch (error) {
       console.error(error);
     }
   };
+
   const handleReset = () => {
     setUsername("");
     setUser(null);
-    setError(false);
+    setErrorMsg(null);
+    setIsLoading(false)
   };
+
 
   return (
     <VStack
@@ -88,6 +102,8 @@ function App() {
               mt={4}
               colorScheme="teal"
               disabled={!username}
+              isLoading={isLoading}
+              loadingText='Submitting'
             >
               Submit
             </Button>
@@ -97,17 +113,21 @@ function App() {
           </Flex>
         </form>
         {user && (
-          <Box mt={8}>
-            <Avatar size="xl" src={user.avatar_url} name={user.login} />
-            <Heading as="h2" size="lg" mt={4}>
-              {user.name}
+          <Box mt={8} ml={32}>
+            {user && user.avatar_url && <Avatar size="xl" src={user.avatar_url} name={user.login} />}
+            <Heading className="heading" as="h2" size="lg" mt={4}>
+              {user.name && user.name}
+              {user && !user.name && "User does not have a name"}
             </Heading>
-            <Text mt={4}>
+            <Text className="bio" mt={4}>
               {user.bio || "This user has no bio."}
-              {error && "User not found."}
             </Text>
           </Box>
         )}
+
+        {errorMsg && <p className="errorMsg">{errorMsg && errorMsg}</p>}
+
+
       </Center>
     </VStack>
   );
