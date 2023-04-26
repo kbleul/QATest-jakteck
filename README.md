@@ -26,7 +26,7 @@ Yohannes Mekonnen, \[04/26/23\]
 ### Notes
 
 - You can use Jest / React testing library or any other
-  library you want for step number
+  library you want for step number 6
 - You should perform end to end testing using playwright library
 - And finally provide a small test report for the tests
 
