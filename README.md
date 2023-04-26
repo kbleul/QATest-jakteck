@@ -30,6 +30,12 @@ Yohannes Mekonnen, \[04/26/23\]
 - You should perform end to end testing using playwright library
 - And finally provide a small test report for the tests
 
+
+### Notes
+
+- If you reach the api limit while doing the test just connect to the internet using a vpn,
+  if you're aleady using a vpn, turn it of and connect again so it can assign you a new ip address
+  
 Markdown is a lightweight markup language based on the formatting conventions
 that people naturally use in email.
 As [John Gruber] writes on the [Markdown site][df1]
@@ -39,3 +45,6 @@ As [John Gruber] writes on the [Markdown site][df1]
 > collaborator, so that we can clone and examine your work.
 
 - [Deadline - Thursday Afternoon 6/27/2023]
+
+
+###Good Luck
