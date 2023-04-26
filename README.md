@@ -36,9 +36,6 @@ Yohannes Mekonnen, \[04/26/23\]
 - If you reach the api limit while doing the test just connect to the internet using a vpn,
   if you're aleady using a vpn, turn it of and connect again so it can assign you a new ip address
   
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
 
 > After completing your tasks, push it to your own github repo and add
 > this username(johhann (https://github.com/johhann)) as your
