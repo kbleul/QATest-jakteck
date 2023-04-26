@@ -20,8 +20,8 @@ Yohannes Mekonnen, \[04/26/23\]
    - Test what happens when user is found and all items(avatar, name, and bio) are viewed
    - Test what happens when user does not exists and user not found is returned
    - Test that all states are resorted to original value when reset button is clicked
-7. Perform an automated end to end testing - Test the complete user
-   journey, user inputs username then get result
+7. Perform an automated end to end testing 
+   - Test the complete user journey, user inputs username then get result
 
 ### Notes
 
