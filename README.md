@@ -2,7 +2,7 @@
 
 ## Take this exam and deliver on time.
 
-Yohannes Mekonnen, \[04/25/23\]
+Yohannes Mekonnen, \[04/26/23\]
 
 ## Exam instructions:
 
@@ -38,4 +38,4 @@ As [John Gruber] writes on the [Markdown site][df1]
 > this username(johhann (https://github.com/johhann)) as your
 > collaborator, so that we can clone and examine your work.
 
-- [Deadline - Thursday Morning 6/25/2023]
+- [Deadline - Thursday Afternoon 6/27/2023]
