@@ -41,7 +41,7 @@ Yohannes Mekonnen, \[04/26/23\]
 > this username(johhann (https://github.com/johhann)) as your
 > collaborator, so that we can clone and examine your work.
 
-- [Deadline - Thursday Afternoon 6/27/2023]
+- [Deadline - Friday Afternoon 6/27/2023]
 
 
 #### Good Luck !!
